@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/videos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <img class="img-background" src="../images/banner-videos.jpg" alt="" />
+      <h1 class="banner-title">Videos</h1>
+      <nav class="navbar navbar-expand-lg fixed-top w-75">
+        <div class="d-flex align-items-center">
+          <img style="width: 70px; height: 70px; margin-left: 20px;" src="../images/logo_sin_fondo.png" alt="">
+          <button id="menu-btn" class="me-3 w-25 d-flex d-lg-none justify-content-center align-items-center position-relative btn bg-dark text-white">Menu</button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body w-50">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active mx-lg-2"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link active mx-lg-2"
+                    aria-current="page"
+                    href="../index.html#integrantes"
+                    >Integrantes</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pedagógica
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="documentos.html"
+                        >Documentos</a
+                      >
+                    </li>
+                    <hr class="dropdown-divider" />
+                    <li>
+                      <a class="dropdown-item" href="presentaciones.html"
+                        >Presentaciones</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="videos.html">Videos</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="podcast.html">Pódcast</a>
+                    </li>
+                    <hr class="dropdown-divider" />
+                    <li>
+                      <a class="dropdown-item" href="biblioteca-virtual.html"
+                        >Biblioteca virtual</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Directiva
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="tutoriales-guias.html"
+                        >Tutoriales y guías</a
+                      >
+                    </li>
+                    <hr class="dropdown-divider" />
+                    <li>
+                      <a class="dropdown-item" href="foro-discusion.html"
+                        >Foro de discusión</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="capacitacion.html"
+                        >Capacitación</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Organizacional
+                  </a>
+                  <ul class="dropdown-menu" style="width: 200px">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="orientacion-academica.html"
+                      >
+                        Orientación academica</a
+                      >
+                    </li>
+                    <hr class="dropdown-divider" />
+                    <li>
+                      <a class="dropdown-item" href="apoyo-piscologico.html"
+                        >Apoyo psicológico</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                  </li>
+                  <li>
+                   <a
+                     class="dropdown-item"
+                     href="bolsadetrabajo.html"
+                     >Bolsa de trabajo</a
+                   >
+                 </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Comunitaria
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="chat.html">Chat</a></li>
+                    <hr class="dropdown-divider" />
+                    <li>
+                      <a class="dropdown-item" href="encuestas.html"
+                        >Encuestas</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="foros.html">Foros</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <p>
+        ¡Bienvenido! Aquí encontrarás una amplia selección de videos tutoriales
+        organizados por periodo, diseñados para fortalecer tu aprendizaje sobre
+        el tema en cuestión.
+      </p>
+      <div class="slider-container">
+        <h2 class="text-center">Periodo 1</h2>
+        <div class="slider">
+          <div class="slide">
+            <div class="item-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/qELDncaLfjo?si=IeA7LIQV2aDjezKK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/23qWSgjd3Hg?si=zI9ybE6MyG1Qj0Gj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/tDXGye9zc9g?si=aF0Au0DGmcUk45tL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JwFqEWCK7nw?si=5ROFUWUk54bO7UmN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/XuhbK97aiB0?si=xlNxGnOxRKaoGmJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5EVecScqpDI?si=xCLg-yLbXF-4bLiJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <h2 class="text-center">Periodo 2</h2>
+        <div class="slider" id="slider">
+          <div class="slide">
+            <div class="item-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/zT5ZkMbrRRc?si=98yOr8Q9Es-z-E4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/kSBW-h9QPCc?si=LLFQMIptrdUkzoFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/zn_QPVN7cmM?si=pYx-aa2bysr5fjEj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/FZaa9ZAfFBc?si=zOUbz-sLpIuqkZ7J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            </div>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <h2 class="text-center">Periodo 3</h2>
+        <div class="slider" id="slider">
+          <div class="slide">
+            <div class="item-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/RF0XwIMo4co?si=CYYpM05zfmEkz9pR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/mwP8WM8CuRU?si=LzIQ_vnLwzz5jcJP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JioX50zl69I?si=SA4huePgtSQaoUw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/UYCvvg8y_cY?si=CDFPR6XnZDuqL8tn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/NIUVwye-8lU?si=xeV9LYuBsfRd99xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+      
+
+      <div class="footer-top">
+        <img class="logo-footer" src="../images/logo_sin_fondo.png" alt="">
+        <div class="footer-content">
+          <div>
+            <h5>Vladimir Rojas Arboleda</h5>
+            <p>Licenciado en Educación Física de la Universidad de Antioquia</p>
+            <p>Email: <a href="mailto:vlachovol@gmail.com" class="text-white">vlachovol@gmail.com</a></p>
+          </div>
+          <div>
+            <h5>Angela M. Rojas Vásquez</h5>
+            <p>Licenciada en Pedagogía Infantil</p>
+            <p>Email: <a href="mailto:milagrosaracastillo@gmail.com" class="text-white">milagrosaracastillo@gmail.com</a></p>
+          </div>
+        </div>
+
+      </div>
+      
+      <p class="text-center">&copy; 2024 Todos los derechos reservados.</p>
+
+  </footer>
+
+
+    <script src="../js/videos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

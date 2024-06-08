@@ -1,0 +1,7 @@
+.imglolo img{
+    width: 80%;
+    height: 700px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,65 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+main p {
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background: rgba(218, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el slider horizontalmente */
+    width: 100%;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 80%; /* Ajusta según sea necesario */
+    overflow: hidden;
+    margin: 50px 0;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    white-space: nowrap; /* Evita que los slides se rompan en varias líneas */
+    overflow-x: auto; /* Permite hacer scroll horizontal */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Añade scrolling suave en iOS */
+}
+
+.item-container {
+    display: flex;
+    gap: 50px; /* Mostrar los items en línea */
+    scroll-snap-align: start; /* Hace que cada item se alinee al inicio del slide */
+}
+
+.slide iframe {
+    width: 100%; /* Ajusta el ancho de los items */
+}
+
+@media (max-width: 1050px) {
+    .video-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main p {
+        width: 90%;
+        font-size: 19px;
+    }
+}
